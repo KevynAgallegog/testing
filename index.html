@@ -25,7 +25,7 @@
 function enviarMensaje() {
   const phoneNumber = "3218619436"; // Aquí debes definir el número de teléfono
   const mensaje = encodeURIComponent("HOLA, Vengo de App de gruapp, necesito ayuda"); // Mensaje predefinido
-  const whatsappLink = `http://localhost:3000/whatsapp/${phoneNumber}?text=${mensaje}`;
+  const whatsappLink = `https://api.whatsapp.com/send/?phone=3218619436&text=HOLA%2C+Vengo+de+App+de+gruapp%2C+necesito+ayuda&type=phone_number&app_absent=0`;
   // Abre el enlace en una nueva ventana o pestaña
   window.open(whatsappLink, '_blank');
 }
